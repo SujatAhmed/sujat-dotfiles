@@ -5,7 +5,6 @@
 	"modules-left": [
 		"hyprland/mode",
 		"hyprland/workspaces",
-		"custom/arrow10",
 		"hyprland/window"
 	],
 
@@ -17,11 +16,14 @@
 		"custom/arrow7",
 		"battery",
 		"custom/arrow6",
-		"tray",
 		"clock#date",
 		"custom/arrow5",
 		"clock#time"
+    //"spacing": 5
 	],
+  "modules-center" : [
+    "tray"
+  ],
 
 	// Modules
 
@@ -98,7 +100,7 @@
 
 	"hyprland/window": {
 		"format": "{}",
-		"max-length": 30,
+		"max-length": 40,
 		"tooltip": false
 	},
 
