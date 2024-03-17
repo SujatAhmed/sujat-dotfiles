@@ -62,7 +62,7 @@
 	background: rgba(40, 40, 40, 0.8784313725); /* #282828e0 */
 	color: @white;
 	font-family: JetBrains Mono Nerd Font, monospace;
-	font-size: 15pt;
+	font-size: 13pt;
 	/*font-weight: bold;*/
 }
 
@@ -203,45 +203,23 @@
 	color: @black;
 }
 
-#custom-arrow1 {
-	font-size: 11pt;
-	color: @time;
-	background: @date;
-}
 
-#custom-arrow2 {
-	font-size: 11pt;
-	color: @date;
-	background: @layout;
-}
-
-#custom-arrow3 {
-	font-size: 11pt;
-	color: @layout;
-	background: @battery;
-}
-
-#custom-arrow4 {
-	font-size: 11pt;
-	color: @battery;
-	background: @temp;
-}
 
 #custom-arrow5 {
 	font-size: 11pt;
-	color: @temp;
-	background: @cpu;
+	color: @white;
+	background: @black;
 }
 
 #custom-arrow6 {
 	font-size: 11pt;
-	color: @cpu;
-	background: @memory;
+	color: @black;
+	background: @battery;
 }
 
 #custom-arrow7 {
 	font-size: 11pt;
-	color: @memory;
+	color: @battery;
 	background: @network;
 }
 
