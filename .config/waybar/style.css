@@ -33,7 +33,7 @@
 @define-color critical	@red;
 @define-color mode	@black;
 @define-color unfocused	@bg2;
-@define-color focused	@braqua;
+@define-color focused	@red;
 @define-color inactive	@purple;
 @define-color sound	@brpurple;
 @define-color network	@purple;
@@ -155,34 +155,15 @@
 }
 
 #pulseaudio {
-	background: @sound;
+	background: @blue;
 	color: @black;
 }
 
 #network {
-	background: @network;
+	background: @red;
 	color: @white;
 }
 
-#memory {
-	background: @memory;
-	color: @black;
-}
-
-#cpu {
-	background: @cpu;
-	color: @white;
-}
-
-#temperature {
-	background: @temp;
-	color: @black;
-}
-
-#language {
-	background: @layout;
-	color: @black;
-}
 
 #battery {
 	background: @battery;

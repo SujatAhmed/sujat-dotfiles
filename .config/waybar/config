@@ -9,15 +9,10 @@
 	],
 
 	"modules-right": [
-		"custom/arrow9",
 		"pulseaudio",
-		"custom/arrow8",
 		"network",
-		"custom/arrow7",
 		"battery",
-		"custom/arrow6",
 		"clock#date",
-		"custom/arrow5",
 		"clock#time"
     //"spacing": 5
 	],
@@ -40,11 +35,11 @@
 		"format-full": "{icon} {capacity}%",
 		"format-alt": "{icon} {power}W",
 		"format-icons": [
-			"  " ,
-			"  ",
-			"  ",
-			"  ",
-			"  "
+			" " ,
+			" ",
+			" ",
+			" ",
+			" "
 		],
 		"tooltip": false
 	},
@@ -62,31 +57,10 @@
 		//"tooltip-format": "{:%e %B %Y}"
 	},
 
-	"cpu": {
-		"interval": 5,
-		"tooltip": false,
-		"format": "  {usage}%",
-		"format-alt": "  {load}",
-		"states": {
-			"warning": 70,
-			"critical": 90
-		}
-	},
-
-
-	"memory": {
-		"interval": 5,
-		"format": " {used:0.1f}G/{total:0.1f}G",
-		"states": {
-			"warning": 70,
-			"critical": 90
-		},
-		"tooltip": false
-	},
 
 	"network": {
 		"interval": 5,
-		"format-wifi": "   {essid} ({signalStrength}%)",
+		"format-wifi": " {essid} ({signalStrength}%)",
 		"format-ethernet": " {ifname}",
 		"format-disconnected": "No connection",
 		"format-alt": " {ipaddr}/{cidr}",
@@ -100,7 +74,7 @@
 
 	"hyprland/window": {
 		"format": "{}",
-		"max-length": 40,
+		"max-length": 70,
 		"tooltip": false
 	},
 
@@ -114,7 +88,7 @@
 	"pulseaudio": {
 		"format": "{icon} {volume}%",
 		"format-bluetooth": "{icon} {volume}%",
-		"format-muted": " ",
+		"format-muted": "",
 		"format-icons": {
 			"headphone": " ",
 			"hands-free": "",
@@ -122,7 +96,7 @@
 			"phone": "",
 			"portable": "",
 			"car": "",
-			"default": [" ", " "]
+			"default": ["", " "]
 		},
 		"scroll-step": 1,
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -133,26 +107,6 @@
 	"tray": {
 		"icon-size": 18
 		//"spacing": 10
-	},
-
-	"custom/arrow1": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/arrow2": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/arrow3": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/arrow4": {
-		"format": "",
-		"tooltip": false
 	},
 
 	"custom/arrow5": {
