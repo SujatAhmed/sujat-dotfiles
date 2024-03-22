@@ -5,6 +5,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 export MOZ_ENABLE_WAYLAND=1
 msic="$HOME/core/media/music"
+wp="$HOME/core/media/wallpapers"
+dw="$HOME/core/dwl"
 YE="$msic/ye"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -73,7 +75,7 @@ ZSH_THEME="afowler"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-autocomplete)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
