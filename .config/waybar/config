@@ -1,141 +1,101 @@
 {
-	"layer": "top",
-	"position": "top",
-
-	"modules-left": [
-		"hyprland/mode",
-		"hyprland/workspaces",
-		"hyprland/window"
-	],
-
-	"modules-right": [
-		"pulseaudio",
-		"network",
-		"battery",
-		"clock#date",
-		"clock#time"
-    //"spacing": 5
-	],
-  "modules-center" : [
-    "tray"
-  ],
-
-	// Modules
-
-	"battery": {
-		"interval": 10,
-		"states": {
-			"warning": 30,
-			"critical": 15
-		},
-		"format-time": "{H}:{M:02}",
-		"format": "{icon} {capacity}% ({time})",
-		"format-charging": " {capacity}% ({time})",
-		"format-charging-full": " {capacity}%",
-		"format-full": "{icon} {capacity}%",
-		"format-alt": "{icon} {power}W",
-		"format-icons": [
-			" " ,
-			" ",
-			" ",
-			" ",
-			" "
-		],
-		"tooltip": false
-	},
-
-	"clock#time": {
-		"interval": 10,
-		"format": "{:%H:%M}",
-		"tooltip": false
-	},
-
-	"clock#date": {
-		"interval": 20,
-		"format": "{:%e %b %Y}",
-		"tooltip": false
-		//"tooltip-format": "{:%e %B %Y}"
-	},
+  "layer": "top",	
+    "position": "top",
+    "height": 24,
 
 
-	"network": {
-		"interval": 5,
-		"format-wifi": " {essid} ({signalStrength}%)",
-		"format-ethernet": " {ifname}",
-		"format-disconnected": "No connection",
-		"format-alt": " {ipaddr}/{cidr}",
-		"tooltip": false
-	},
-
-	"hyprland/mode": {
-		"format": "{}",
-		"tooltip": false
-	},
-
-	"hyprland/window": {
-		"format": "{}",
-		"max-length": 70,
-		"tooltip": false
-	},
-
-	"hyprland/workspaces": {
-		"disable-scroll-wraparound": true,
-		"smooth-scrolling-threshold": 4,
-		"enable-bar-scroll": true,
-		"format": "{name}"
-	},
-
-	"pulseaudio": {
-		"format": "{icon} {volume}%",
-		"format-bluetooth": "{icon} {volume}%",
-		"format-muted": "",
-		"format-icons": {
-			"headphone": " ",
-			"hands-free": "",
-			"headset": "",
-			"phone": "",
-			"portable": "",
-			"car": "",
-			"default": ["", " "]
-		},
-		"scroll-step": 1,
-		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-		"tooltip": false
-	},
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": [],
+    "modules-right": ["network", "backlight", "pulseaudio", "battery", "clock", "tray"],
 
 
-	"tray": {
-		"icon-size": 18
-		//"spacing": 10
-	},
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "disable-markup": true,
+      "format": "{name}" 
+    },
 
-	"custom/arrow5": {
-		"format": "",
-		"tooltip": false
-	},
 
-	"custom/arrow6": {
-		"format": "",
-		"tooltip": false
-	},
+    "hyprland/window": {
+      "format": "{}",
+      "max-length": 150
+    },
 
-	"custom/arrow7": {
-		"format": "",
-		"tooltip": false
-	},
 
-	"custom/arrow8": {
-		"format": "",
-		"tooltip": false
-	},
+    "tray": {
+      "icon-size": 15,
+      "spacing": 10 
+    },
 
-	"custom/arrow9": {
-		"format": "",
-		"tooltip": false
-	},
 
-	"custom/arrow10": {
-		"format": "",
-		"tooltip": false
-	}
+    "clock": {
+      "format": "{:%a %b %e  %R}",
+      "interval": 30
+    },
+
+
+
+    "battery": {
+      "interval": 10,
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format-time": "{H}:{M:02}",
+      "format": "{icon} {capacity}%({time})",
+      "format-charging": "{capacity}%({time})",
+      "format-charging-full": "{capacity}%",
+      "format-full": "{icon} {capacity}%",
+      "format-alt": "{icon} {power}W",
+      "format-icons": [
+        " " ,
+      "",
+      "",
+      "",
+      ""
+      ],
+      "tooltip": false
+    },
+
+
+    "network": {
+      "interval": 5,
+      "format-wifi": " {essid}({signalStrength}%)",
+      "format-ethernet": " {ifname}",
+      "format-disconnected": "No connection",
+      "format-alt": " {ipaddr}/{cidr}",
+      "tooltip": false
+    },
+
+
+
+
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "{icon} {percent}%  ",
+
+      "format-icons": ["", ""],
+      "interval": 60
+    },
+
+
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "{icon} {volume}%",
+      "format-muted": "",
+      "format-icons": {
+        "headphone": " ",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+      },
+      "scroll-step": 1,
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "tooltip": false
+    }
 }
+
+
