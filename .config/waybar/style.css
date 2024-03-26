@@ -4,6 +4,7 @@
     font-family: Jetbrains Mono Nerd Font, monospace;
     font-size: 15px;
 }
+	
 
 
 window#waybar { 
@@ -20,7 +21,7 @@ window#waybar {
 
 .modules-right {
 	background-color: #323232;
-	padding: 0px 5px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 
@@ -76,7 +77,7 @@ window#waybar.empty {
 
 
 #network, #temperature, #backlight, #pulseudio, #battery {
-    padding: 0px 15px 0px 15px;
+    padding: 0px 0px 0px 0px;
 }
     
 
