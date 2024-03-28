@@ -3,11 +3,18 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export MOZ_ENABLE_WAYLAND=1
+#export MOZ_ENABLE_WAYLAND=1
 msic="$HOME/core/media/music"
 wp="$HOME/core/media/wallpapers"
 dw="$HOME/core/dwl"
 YE="$msic/ye"
+hyprcfg="$HOME/.config/hypr/hyprland.conf"
+wallpapercfg="$HOME/.config/hypr/hyprpaper.conf"
+waybrcfg="$HOME/.config/waybar/config"
+waybrstl="$HOME/.config/waybar/style.css"
+
+
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

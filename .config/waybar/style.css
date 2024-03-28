@@ -76,7 +76,7 @@ window#waybar.empty {
 }
 
 
-#network, #temperature, #backlight, #pulseudio, #battery {
+#network, #temperature, #backlight, #pulseudio, #battery #clock{
     padding: 0px 0px 0px 0px;
 }
     
