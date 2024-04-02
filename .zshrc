@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export PATH=$PATH:~/.config/scripts
 #export MOZ_ENABLE_WAYLAND=1
 msic="$HOME/core/media/music"
 wp="$HOME/core/media/wallpapers"

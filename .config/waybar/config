@@ -12,7 +12,7 @@
     "hyprland/workspaces": {
       "disable-scroll": true,
       "disable-markup": true,
-      "format": "{name}" 
+      "format": "[{name}]" 
     },
 
 
@@ -29,7 +29,7 @@
 
 
     "clock": {
-      "format": "[{:%a %b %e  %R}]",
+      "format": "{:%a %b %e  %R}|",
       "interval": 30
     },
 
@@ -42,11 +42,11 @@
         "critical": 15
       },
       "format-time": "{H}:{M:02}",
-      "format": "[{icon} {capacity}%({time})]",
-      "format-charging": "[{capacity}%({time})]",
-      "format-charging-full": "[{capacity}%]",
-      "format-full": "[{icon} {capacity}%]",
-      "format-alt": "[{icon} {power}W]",
+      "format": "{icon} {capacity}%({time})|",
+      "format-charging": "{capacity}%({time})|",
+      "format-charging-full": "{capacity}%|",
+      "format-full": "{icon} {capacity}%|",
+      "format-alt": "{icon} {power}W|",
       "format-icons": [
         " " ,
       "",
@@ -60,10 +60,10 @@
 
     "network": {
       "interval": 5,
-      "format-wifi": "[ {essid}({signalStrength}%)]",
-      "format-ethernet": "[{ifname}]",
-      "format-disconnected": "[No connection]",
-      "format-alt": "[{ipaddr}/{cidr}]",
+      "format-wifi": "| {essid}({signalStrength}%)|",
+      "format-ethernet": "{ifname}|",
+      "format-disconnected": "No connection|",
+      "format-alt": "{ipaddr}/{cidr}|",
       "tooltip": false
     },
 
@@ -72,7 +72,7 @@
 
     "backlight": {
       "device": "intel_backlight",
-      "format": "[{icon} {percent}%]",
+      "format": "{icon} {percent}%|",
 
       "format-icons": ["", ""],
       "interval": 60
@@ -80,8 +80,8 @@
 
 
     "pulseaudio": {
-      "format": "[{icon} {volume}%]",
-      "format-bluetooth": "[{icon} {volume}%]",
+      "format": "{icon} {volume}%|",
+      "format-bluetooth": "{icon} {volume}%|",
       "format-muted": "",
       "format-icons": {
         "headphone": " ",
