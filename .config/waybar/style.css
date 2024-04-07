@@ -14,7 +14,7 @@ window#waybar {
 
 
 .modules-left {
-	background-color: #800020;
+	background-color: #A52A2A;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -22,7 +22,7 @@ window#waybar {
 .modules-right {
 	/*background-color: #ff9c00;
 	background-color: #b25500;*/
-	background-color: #A52A2A;
+	background-color: #1d4160;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -41,7 +41,7 @@ window#waybar {
 #workspaces button {
 	padding: 0px 0px 0px 0px; 
  	min-width: 1px;
-	background-color: #800020;
+	background-color: #A52A2A;
 	color: #ffffff;
 }
 
